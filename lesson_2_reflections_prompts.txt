@@ -1,0 +1,20 @@
+Q. What happens when you initialize a repository? Why do you need to do it?
+Ans. When we initialize a repository, a .git folder is created which stores 
+all the metadata related to the project, which has the commit versions and
+related details. It is needed so that we can store the commit versions helping
+in efficiency.
+
+Q. How is the staging area different from the working directory and the
+ repository? What value do you think it offers?
+Ans. Staging area is used as an intermediary area to store all the 'improved'
+files so that we can create a single commit depending upon the programmer, if he
+thinks that multiple 'improved' files are required to be in a single new
+commit due to various reasons(usually if the multiple 'improved' files have 
+logical change but not significant enough). It offers a chance to the programmer
+to review whether the files added in staging area are to be saved in a single
+commit or not. It gives the programmer a chance to remove a file he doesn't
+deem it worthy enough to have in the commit or save it in the next commit.
+
+ 
+  
+
