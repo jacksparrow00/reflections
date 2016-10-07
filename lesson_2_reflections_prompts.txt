@@ -15,6 +15,38 @@ to review whether the files added in staging area are to be saved in a single
 commit or not. It gives the programmer a chance to remove a file he doesn't
 deem it worthy enough to have in the commit or save it in the next commit.
 
- 
-  
+Q. How can you use the staging area to make sure you have one commit per 
+logical change?
+Ans.By saving the working directory into staging area after each logical 
+change.
+Better answer:- By using git diff and figuring out if there is any logical 
+change in the working directory that might be transferred to staging area.
 
+Q. What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+Ans. Branches would be helpful if we wanted to design some experimental feature
+for the app, or add something like a different version of the app which doesn't
+correspond to the main sequence of commits.
+Branches would help in identifying the different version and saving them with a
+different view of commit so that they don't get mixed with the main sequence
+commits.
+ 
+Q. How do the diagrams help you visualize the branch structure?
+Ans. Diagrams are based on the order of the occurences of commits and branches.
+So they can be drawn with their parent commits. Hence, they help in visualize 
+the structure.
+  
+Q. What is the result of merging two branches together? Why do we represent it
+in the diagram the way we do?
+Ans.After merging two branches, the lines of code from the two parent commits
+gets copied and redundant code removed.
+It is represented so as to show that the merged commit is the result of the 
+commits of two branches.
+
+Q. What are the pros and cons of Git's automatic vs. always doing merges 
+manually?
+Ans. Pros:-
+1. Need not do it manually every time. This will save a lot of time.
+2. Reduces occurences of wrong merges.
+Cons:-
+1. Can't decide between conflicts. Have to solve it manually.
